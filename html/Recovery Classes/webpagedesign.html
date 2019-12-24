@@ -1,0 +1,188 @@
+<html>
+	<head>
+		<title>Web page design</title>
+		<style>
+			#outer
+			{
+				height:1200px;
+				width:800px;
+				margin:0px auto;
+				border:1px solid;
+			}
+			#outer #header
+			{
+				height:100px;
+				width:800px;
+			}
+			#outer #header #h1
+			{
+				height:100px;
+				width:200px;
+				background-color:green;
+				float:left;
+				background-image:url('spi.jpeg');
+				background-size:100% 100%;
+			}
+			#outer #header #h2
+			{
+				height:100px;
+				width:600px;
+				float:right;
+			}
+			#h2 ul li
+			{
+				display:inline;
+				padding:13px;
+				font-family:verdana;
+				font-weight:bold;
+			}
+			#outer #slider
+			{
+				height:300px;
+				width:800px;
+				background-image:url('spi.jpg');
+				background-size:100% 100%;
+			}
+			#outer #content
+			{
+				height:500px;
+				width:800px;
+				background-color:orange;
+			}
+			#outer #content #lside
+			{
+				height:500px;
+				width:600px;
+				background-color:grey;
+				float:left;
+			}
+			#outer #content #rside
+			{
+				height:500px;
+				width:200px;
+				background-color:lightgrey;
+				float:left;
+			}
+			#outer #box
+			{
+				height:250px;
+				width:800px;
+				background-color:red;
+			}
+			#outer #box .box1
+			{
+				height:250px;
+				width:500px;
+				background-color:lightblue;
+				float:left;
+			}
+			#outer #box .box2
+			{
+				height:250px;
+				width:300px;
+				background-color:cyan;
+				float:left;
+			}
+			#outer #footer
+			{
+				height:50px;
+				width:800px;
+				background-color:black;
+				color:white;
+			}
+			marquee
+			{
+				height:300px;
+				padding:15px;
+				border:1px solid;
+				margin:10px;
+			}
+			</style>
+	</head>
+	<body>
+		<div id="outer">
+			<div id="header">
+				<div id="h1"></div>
+				<div id="h2">
+					<ul>
+						<li>HOME</li>
+						<li>ABOUT US</li>
+						<li>REGISTER</li>
+						<li>LOGIN</li>
+						<li>CONTACT US</li>
+					</ul>
+				</div>
+			</div>
+			<div id="slider"></div>
+			<div id="content">
+				<div id="lside">
+					<p style="padding:15px; color:white; font-family:verdana;">This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.This is my first web page.</p>
+					<img src="web1.jpg" height="150px" width="300px" style="padding-left:15px;">
+					<p style="padding:15px; color:white; font-family:verdana;">This is my first web page.This is my first web page.</p>
+				</div>
+				<div id="rside">
+					<center>
+					<h2 style="padding:15px; color:red; font-family:verdana; text-align:center;">NOTICE</h2>
+					<marquee direction="up" onmouseover="stop();" onmouseout="start();">
+						<ul>
+							<li>College is Closed</li>
+							<li>College is Closed</li>
+							<li>College is Closed</li>
+							<li>College is Closed</li>
+							<li>College is Closed</li>
+							<li>College is Closed</li>
+							<li>College is Closed</li>
+							<li>College is Closed</li>
+							<li>College is Closed</li>
+							<li>College is Closed</li>
+							<li>College is Closed</li>
+							<li>College is Closed</li>
+							
+						</ul>
+					</marquee>
+					</center>
+				</div>
+			</div>
+			<div id="box">
+				<div class="box1">
+					<h2 style="padding:10px;">Contact Us</h2>
+					<form style="padding:10px;">
+						<table>
+							<tr>
+								<th>Name</th><td><input type="text"/></td>
+							</tr>
+							<tr>
+								<th>Email</th><td><input type="email"/></td>
+							</tr>
+							<tr>
+								<th>Phone</th><td><input type="number"/></td>
+							</tr>
+							<tr>
+								<th>Message</th><td><textarea></textarea></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><input type="submit" value="SEND"></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<div class="box2">
+					<p style="padding:15px;">
+							<b>Address</b>
+							7/11/24 Hiramandi, Gardens<br/>
+							New Civil Lines;<br/>
+							Mumbai:66066066;
+					</p>
+					<p style="padding:15px;">
+						Phone No:9125965578;<br/>
+						skanaujiya131@gmail.com
+					</p>
+				</div>
+			</div>
+			<div id="footer">
+				<span>Copyright &copy; 2018 Shubham Kanaujiya</span>
+			</div>
+		</div>
+	</body>
+</html>
