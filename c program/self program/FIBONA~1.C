@@ -1,0 +1,19 @@
+//WAP in c to display Fibonacci sequence
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int n1=0,n2=1,n3,i,num;
+	clrscr();
+	printf("Enter any number");
+	scanf("%d",&num);
+	printf("%d %d ",n1,n2);
+	for(i=2;i<=num;i++)
+	{
+		n3=n1+n2;
+		printf("%d ",n3);
+		n1=n2;
+		n2=n3;
+	}
+	getch();
+}
