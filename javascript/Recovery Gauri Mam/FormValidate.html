@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<script>
+			function validate()
+			{
+				var check1=checkName();
+				if(check1==false)
+				{
+					return false;
+				}
+				var check2=checkEmail();
+				if(check2==false)
+				{
+					return false;
+				}
+				var check3=checkPass();
+				if(check3==false)
+				{
+					return false;
+				}
+			}
+			function checkName()
+			{
+				var name=document.getElementById("name").value;
+				if(name.length==0)
+					return false;
+				for(i=0;i<name.length;i++)
+				{
+					if(!((name.charCodeAt(i)>=65 && name.charCodeAt(i)<=90)||(name.charCodeAt(i)>=97 && name.charCodeAt(i)<=122)))
+					return false;
+				}
+			}
+			function checkEmail()
+			{
+				var email=document.getElementById("email").value;
+				var pn=/^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{3,}$/;
+				if(!(pn.test(email)))
+				{
+					document.getElementById("msg2").innerText="Please Correct Email";
+					return false;
+				}
+				if(email.length==0)
+				{
+					document.getElementById("msg2").innerText="Please Enter Email";
+					return false;
+				}
+			}
+			function checkPass()
+			{
+				var pass=document.getElementById("pass").value;
+				if(pass.length==0)
+				{
+					document.getElementById("msg3").innerText="Please Password";
+					return false;
+				}
+				if(!(pass.match(/[A-Z]/)))
+				return false;
+				if(!pass.match(/[a-z]/))
+				return false;
+				if(!pass.match(/[0-9]/))
+				return false;
+				if(!pass.match(/[!@#$%^&*]/))
+				return false;
+				if(!(pass.length>=8))
+				return false;
+			}
+			function hidePass()
+			{
+				var pass=document.getElementById("pass");
+				pass.type="password";
+			}
+		</script>
+	</head>
+	<body>
+		<form action="image2.html" onsubmit="return validate()">
+			<input type="text" id="name" placeholder="Name"/><br/><br/>
+			<span id="msg1"></span><br/>
+			<input type="text" id="email" placeholder="Email"/><br/><br/>
+			<span id="msg2"></span><br/>
+			<input type="text" id="pass" placeholder="Password" onkeypress="hidePass()"/><br/><br/>
+			<span id="msg3"></span><br/>
+			<input type="submit" value="submit"/><br/>
+		</form>
+	</body>
+</html>

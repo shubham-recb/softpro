@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<style>
+			#outer
+			{
+				height:300px;
+				width:500px;
+				border:5px solid red;
+			}
+		</style>
+		<script>
+			var arr=["a.jpeg","b.jpg","c.png","d.jpeg","e.jpg"];
+			var index=0;
+			function next()
+			{
+				index++;
+				if(index==arr.length)
+				{
+					index=0;
+				}
+				document.getElementById("src").src=arr[index];			
+			}
+			function prev()
+			{
+				index--;
+				if(index==-1)
+				{
+					index=0;
+				}
+				document.getElementById("src").src=arr[index];
+				
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<div id="outer"><img id="src" src="a.jpeg" height="300px" width="500px"/></div><br/>
+			<button onclick="prev()">Previcious</button>
+			<button onclick="next()">Next</button>
+		</center>
+	</body>
+</html>

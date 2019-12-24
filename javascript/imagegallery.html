@@ -1,0 +1,44 @@
+<!--Make  Image Gallery with next and pevicios button-->
+<html>
+	<head>
+		<title>Image Gallery</title>
+		<script>
+			<!--Create an array to collect images-->
+			var imgArr=["1.jpeg","2.jpeg","3.jpeg","4.jpeg","5.jpeg","7.jpeg","8.jpeg","9.jpeg"];
+			var index=0;
+			function nextImages()
+			{
+				var im=document.getElementById("img1");
+				im.src="images/"+imgArr[index];
+				index++;
+				if(index==imgArr.length)
+				{
+					index=index-1;
+				}
+			}
+			function pevImages()
+			{
+				index--;
+				if(index<=0)
+				{
+				index=0;
+				document.getElementById("img1").src="images/"+imgArr[index];
+				}
+				else
+				{
+					document.getElementById("img1").src="images/"+imgArr[index];	
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<h1>Click button to Pevicious and Next Image</h1><hr/>
+			<div id="d1" style="height:300px; width:50%; border:10px solid red; box-shadow:10px 10px 5px orange">
+				<img  id="img1" src="images/1.jpeg" height="100%" width="100%"/><br/><br/>
+				<button onclick="pevImages()" style="height:40px width:60px; font-size:20px;"><<</button>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+				<button onclick="nextImages()" style="height:40px width:60px; font-size:20px;">>></button>
+			</div>
+		</center>
+	</body>
+</html>

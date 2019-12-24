@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script>
+			function hide()
+			{
+				var im=document.getElementById("im");
+				im.src="none";
+				im.style.background="cyan";
+			}
+			function show()
+			{
+				var im=document.getElementById("im");
+				im.src="a.jpeg";
+			}
+			
+		</script>
+	</head>
+	<body>
+		<center>
+			<div id="dv" style="height:300px;width:400px;border:2px solid red;" onmouseover="hide()" onmouseout="show()"><img id="im" src="a.jpeg" height="300px" width="400px"/></div>
+		</center>
+	</body>
+</html>

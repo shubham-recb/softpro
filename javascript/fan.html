@@ -1,0 +1,38 @@
+<!--WAP in java script to start fan on click button evevt-->
+<html>
+	<head>
+		<title>Fan On/Off</title>
+		<script>
+			var i=90;
+			function moveFan()
+			{
+				i=i+30;
+				var im=document.getElementById("img1");
+				im.style='transform:rotate('+i+'deg)';
+				window.setTimeout("moveFan()",40);
+			}
+			<!--Confirm message for user-->
+			function checkStatus()
+			{
+				var a=confirm("Are you sure start the fan?");
+			if(a==true)
+			{
+				moveFan();
+			}
+			else
+			{
+				document.write("Thank ! Save the light");
+			}
+			}
+		</script>
+	</head>
+	<body>
+	<center>
+		<h1>Click on button to start fan</h1><hr/>
+		<div id="di1" style="height:350px; width:350px; border:5px solid black;">
+			<img id="img1" src="fan1.gif" height="250px" width="250px" style="margin-top:50px;">
+		</div><br/><br/>
+		<button onclick="checkStatus()" style="width:200px;height:40px; background-color:navy;color:white;font-size:25px;">Start Fan</button>
+	</center>
+	</body>
+</html>

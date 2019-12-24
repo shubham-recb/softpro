@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Display textarea in text box</title>
+		<script>
+		function tab()
+		{
+			var num,res,i;
+			var num=parseInt(document.getElementById("text1").value);
+			for(i=1;i<=10;i++)
+			{
+				res=num*i+"\n";
+				document.getElementById("txtresult").value+=res;
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<h1>Enter any number in to textbox</h1><hr/>
+		Enter any number<br/>
+		<input type="text" id="text1"/>
+		<br/><br/>
+		Result<br/><br/>
+		<textarea  id="txtresult" rows="10" cols="4" style="resize:none;"></textarea>
+		<input type="button" value="Print Table"  onclick="tab()"/>
+	</body>
+</html>

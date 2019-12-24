@@ -1,0 +1,41 @@
+<!--WAP in js to change the background of div on button click event by using an array-->
+<html>
+	<head>
+		<title></title>
+		<script>
+			var colors=["red","yellowgreen","blue","orange","pink"];
+			//create function for red color
+			function cRED()
+			{
+				document.getElementById("d1").style.background=colors[0];
+			}
+			function cYELLOWGREEN()
+			{
+				document.getElementById("d1").style.background=colors[1];
+			}
+			function cBLUE()
+			{
+				document.getElementById("d1").style.background=colors[2];
+			}
+			function cORANGE()
+			{
+				document.getElementById("d1").style.background=colors[3];
+			}
+			function cPINK()
+			{
+				document.getElementById("d1").style.background=colors[4];
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Click on bitton to change the background of div</h1>
+		<div id="d1" style="width:95%; height:300px;margin:0px;background-color:aqua;border:4px solid red;border-radius:50px;"></div>
+		<center>
+		<input type="button" onclick="cRED()" value="RED" style="background-color:red;color:white; width:150px;height:50px;font-size:25px; border-radius:50%"/>
+		<input type="button" onclick="cYELLOWGREEN()" value="YELLOWGREEN" style="background-color:yellowgreen;color:white; width:210px;height:50px;font-size:25px;border-radius:50%"/>
+		<input type="button" onclick="cBLUE()" value="BLUE" style="background-color:blue;color:white; width:210px;height:50px;font-size:25px;border-radius:50%"/>
+		<input type="button" onclick="cORANGE()" value="ORANGE" style="background-color:orange;color:white; width:210px;height:50px;font-size:25px;border-radius:50%"/>
+		<input type="button" onclick="cPINK()" value="PINK" style="background-color:pink;color:white; width:210px;height:50px;font-size:25px;border-radius:50%"/>
+		</center>
+	</body>
+<html>

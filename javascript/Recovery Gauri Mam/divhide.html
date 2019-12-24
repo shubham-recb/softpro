@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script>
+			function display()
+			{
+				var b1=document.getElementById("box");
+				var b2=document.getElementById("btn1");
+				if(b2.value=="Hide")
+				{
+					b1.style.display="none";
+					b2.value="Show";
+				}
+				else
+				{
+					b1.style.display="block";
+					document.getElementById("box").innerText="Shivam is also great."
+					b2.value="Hide";
+					b1.style.background="red";
+				}
+			}
+		</script>
+	</head>
+	<body><center>
+		<h1>Hide a Division</h1><hr/>
+		<div id="box" style="height:200px; width:200px; border:2px solid;">Shubham is a great person.</div>
+		<input type="button" onclick="display()" value="Hide" id="btn1"/>
+		</center>
+	</body>
+</html>

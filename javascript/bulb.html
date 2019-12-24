@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Bulb on/off</title>
+			<style>
+				#outer
+				{
+					height:300px;
+					width:500px;
+					border:1px solid;
+				}
+			</style>
+			<script>
+				function onoffBulb()
+				{
+					var im=document.getElementById("img1");
+					var b=document.getElementById("btn");
+					if(b.value=="ON")
+					{
+						im.src="On.gif"
+						b.value="OFF"
+						b.style.background="red"
+					}
+					else
+					{
+						im.src="Off.gif"
+						b.value="ON"
+						b.style.background="green"
+					}
+				}
+			</script>
+	</head>
+	<body>
+	<center>
+		<h1>click on button to on & off bulb</h1><hr/>
+		<div id="outer">
+		<img src="Off.gif" id="img1"><br/><br/>
+		<input type="button" id="btn" onclick="onoffBulb()" value="ON" style="height:40px; width:200px; background-color:green;font-size:22px; color:white;border-radius:15px;"/>
+		</div>
+	</center>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!--Demonstration of innerText ANd Inner HTML-->
+<html>
+	<head>
+		<script>
+			function demoinnerText()
+			{
+				var v=document.getElementById("t1").value;
+				document.getElementById("sp").innerText=v;
+			}
+			function demoinnerHTML()
+			{
+				var v=document.getElementById("t1").value;
+				document.getElementById("sp").innerHTML=v;
+			}
+		</script>
+	</head>
+	<body>
+		Enter any text:<input type="text" id="t1"/>
+		<input type="button"/ value="innerText" onclick="demoinnerText()"/>
+		<input type="button"/ value="innerHTML" onclick="demoinnerHTML()"/>
+		<br/><br/>
+		Result:<span id="sp"></span>
+	</body>
+</html>

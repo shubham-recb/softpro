@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script>
+			function pass(p)
+			{
+				var div=document.getElementById("outer");
+				var st=div.style.display;
+				if(st=="none")
+				{
+					p.value="hide";
+					div.style.display="block";
+
+				}
+				else
+				{
+					p.value="show"
+					div.style.display="none";
+				}
+			}
+		</script>
+		<style>
+			#outer
+			{
+				height:300px;
+				width:200px;
+				background-color:cyan;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="outer"></div>
+		<input type="button" onclick="pass(this)" value="Show"/>
+	</body>
+</html>

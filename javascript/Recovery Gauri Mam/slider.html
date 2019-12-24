@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Slide Automatic</title>
+		<style>
+			#outer 
+			{
+				height:300px;
+				width:500px;
+				border:5px solid red;
+			}
+		</style>
+		<script>
+			var arr=["a.jpeg","b.jpg","c.png","d.jpeg","e.jpg"];
+			var index=0;
+			window.setInterval("slider()",500);
+			function slider()
+			{
+				index++;
+				if(index==arr.length)
+				{
+					index=0;
+				}
+				document.getElementById("im").src=arr[index];
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<h1>My Slider</h1><hr/><br/>
+			<div id="outer">
+				<img src="a.jpeg" id="im" height="300px" width="500px">
+			</div>
+		</center>
+	</body>
+</html>

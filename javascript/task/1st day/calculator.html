@@ -1,0 +1,47 @@
+<!--Calculator-->
+<html>
+	<head>
+		<title>Calculator</title>
+		<script>
+			var a,b,ope,sum,sub,mult,div;
+			a=parseFloat(prompt("Enter First Number","Type Here"));
+			b=parseFloat(prompt("Enter Second Number","Type Here"));
+			b=parse(prompt("Enter Second Number","Type Here"));
+			function sum()
+			{
+				sum=a+b;
+				alert("Addition of Value = "+sum);
+			}
+			function sub()
+			{
+				sub=a-b;
+				alert("Substractio of Value = "+sub);
+			}
+			function mult()
+			{
+				mult=a*b;
+				alert("Multiply of Value = "+mult);
+			}
+			function div()
+			{
+				div=a/b;
+				alert("Divisin of Value = "+div);
+			}
+		</script>
+		<style>
+			#outer{
+				height:80px;
+				width:250px;
+				barder:5px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="outer">
+		<input type="button" value="Sum" onclick="sum()"/>
+		<input type="button" value="Sub" onclick="sub()"/>
+		<input type="button" value="Mult" onclick="mult()"/>
+		<input type="button" value="Div" onclick="div()"/>
+	</div>
+	</body>
+</html>

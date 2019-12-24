@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<script>
+			function hide()
+			{
+				var im=document.getElementById("im");
+				im.src="b.jpg";
+			}
+			function show()
+			{
+				var im=document.getElementById("im");
+				im.src="a.jpeg";
+			}
+			function hide1()
+			{
+				var im=document.getElementById("im1");
+				im.src="a.jpeg";
+			}
+			function show1()
+			{
+				var im=document.getElementById("im1");
+				im.src="b.jpg";
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<div id="dv" style="height:300px;width:400px;border:2px solid red; float:left" onmouseover="hide()" onmouseout="show()"><img id="im" src="a.jpeg" height="300px" width="400px"/></div>
+			<div id="dv1" style="height:300px;width:400px;border:2px solid red; float:right;" onmouseover="hide1()" onmouseout="show1()"><img id="im1" src="b.jpg" height="300px" width="400px"/></div>
+		</center>
+	</body>
+</html>

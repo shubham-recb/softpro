@@ -1,0 +1,115 @@
+<html>
+<head>
+<style>
+span{
+	color:red;
+
+}
+</style>
+
+	<script>
+	function validate()
+	{
+		var check1=checkName();
+		if(check1==false)
+		return false;
+		
+		var check2=checkEmail();
+		if(check2==false)
+		return false;
+		
+		var check3=checkPass();
+		if(check3==false)
+		return false;
+		
+		var check4=checkPhone();
+		if(check4==false)
+		return false;
+		 
+
+	}
+	
+	function checkName()
+	{
+	var name=document.getElementById("name").value;
+	if(name.length==0)
+	{
+	document.getElementById("m1").innerText="Incorrect Name";
+	return false;
+	} 
+	 for(i=0;i<name.length;i++)
+	 {
+	
+	if(!((name.charCodeAt(i)>=65&&name.charCodeAt(i)<=90)||(name.charCodeAt(i)>=97&&name.charCodeAt(i)<=122)))
+	{
+		document.getElementById("m1").innerText="Incorrect Name";
+		return false;
+	}
+	
+	}
+	}
+	
+	
+	function checkEmail()
+	{
+	var email=document.getElementById("email").value;
+	var pn=/^[a-zA-Z0-9.]+@[a-zA-Z0-9.]+\.[a-zA-Z]{3,}$/;
+	if(!pn.test(email))
+	{document.getElementById("m2").innerText="Incorrect Email";
+	return false;
+	} 
+	}
+	
+function checkPass()
+{
+	var pass=document.getElementById("pass").value;
+	
+	if(!(pass.match(/[A-Z]/)))
+	return false;
+	if(!pass.match(/[a-z]/))
+	return false;
+	if(!pass.match(/[0-9]/))
+	return false;
+	if(!pass.match(/[!@#$%^&*]/))
+	return false;
+	if(!(pass.length>=8))
+	return false;
+	}
+		
+	function checkPhone()
+	{
+	var phone=document.getElementById("phone").value;
+	var pn=/^[6-9]+[0-9]{9}$/;
+	if(!pn.test(phone))
+	{document.getElementById("m4").innerText="Incorrect Phone Number";
+	return false;
+	} 
+	}
+	
+	</script>
+</head>
+
+
+<body>
+	<center>
+	<form action="date.html" onsubmit=" return validate()">
+	<input type="text" id="name" placeholder="Enter name"/>
+	<br/><span id="m1"></span>
+	<br/><br/>
+	<input type="text" id="email"  placeholder="Enter email"/>
+	<br/><span id="m2"></span>
+	<br/><br/>
+	<input type="text" id="pass"  placeholder="Enter password"/>
+	<br/><span id="m3"></span>
+	<br/><br/>
+	<input type="text" id="phone"  placeholder="Enter phone number"/>
+	<br/><span id="m4"></span>
+	<br/><br/>
+	
+	<input type="submit" value="submit"/>
+		</form>
+	</center>
+</body>
+</html>
+validation.html
+Displaying validation.html.

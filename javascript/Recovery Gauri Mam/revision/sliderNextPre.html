@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Next & Previcious Images Gallery</title>
+		<style>
+			#outer
+			{
+				height:300px;
+				width:500px;
+				border:30px double red;
+			}
+			button
+			{
+				height:50px;
+				width:50px;
+				font-size:30px;
+				border:2px solid red;
+			}
+		</style>
+		<script>
+			var arr=["a.jpeg","b.jpg","c.png","d.jpeg","e.jpg"];
+			var index=0;
+			function next()
+			{
+				index++;
+				if(index==arr.length)
+				{
+					index=0;
+				}
+				document.getElementById("im").src=arr[index];
+			}
+			function prev()
+			{
+				index--;
+				if(index==-1)
+				{
+					index=0;
+				}
+				document.getElementById("im").src=arr[index];
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<div id="outer">
+				<img src="a.jpeg" id="im" height="300px" width="500px"/>
+			</div><br/>
+			<button onclick="prev()">&laquo</button>
+			<button onclick="next()">&raquo</button>
+		</center>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!--Validate a form emial, number & pincode-->
+<html>
+	<head>
+		<title>Validate Form</title>
+		<script>
+			function valForm()
+			{
+				var email=document.myform.email.value;
+				var mnumber=document.myform.mnumber.value;
+				var pnumber=document.myform.pnumber.value;
+				if(email=="")
+				{
+					alert("Please enter your Email");
+					return false;
+				}
+				else if(mnumber.length<10)
+				{
+					alert("Please enter 10 digits number");
+					return false;
+				}
+				else if(pnumber=="")
+				{
+					alert("Pincode is also need");
+					return false;
+				}
+				else
+				{
+					alert("Thanks ! Your form are fillup.");
+
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form action="C:\Users\dell\Desktop\softpro\html\task\6th day job\job.html" method="post" name="myform" onsubmit="return valForm()">
+			Email:<input type="email" name="email"/>
+			Mobile:<input type="number" name="mnumber"/>
+			Pin code:<input type="number" name="pnumber"/>
+			<input type="submit" value="Submit"/>
+		</form>
+	</body>
+</html>
