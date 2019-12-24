@@ -1,0 +1,205 @@
+<html>
+	<head>
+		<title>Task2</title>
+	</head>
+	<body>
+		<h1 style="text-align:center;background-color:black;color:white; font-size:40px;"><marquee direction="right" behavior="alternate" scrollamount="15" onmouseover="stop()" onmouseout="start()">Application Form</marquee></h1>
+	<form action="task1form.html" method="post">
+	<fieldset>
+		<legend><b style="font-size:20px;">Personal Information:</b></legend>
+		<table height="250" width="1200" cellspacing="0">
+			<tr>
+				<td>Name(First):</td>
+				<td><input type="text"  name="name" placeholder="Enter Your Name" required="true"/></td>
+				<td>(Middle):</td>
+				<td><input type="text" placeholder="Enter middle Name"/></td>
+				<td>(last):</td>
+				<td><input type="text" placeholder="Enter last name"/></td>
+			</tr>
+			<tr>
+				<td>F'Name(First):</td>
+				<td><input type="text"  name="fname" placeholder="Enter Your F'Name" required="true"/></td>
+				<td>(Middle):</td>
+				<td><input type="text" placeholder="Enter middle Name"/></td>
+				<td>(last):</td>
+				<td><input type="text" placeholder="Enter last name"/></td>
+			</tr>
+			<tr>
+				<td>M'Name(First):</td>
+				<td><input type="text"  name="mname" placeholder="Enter Your M'Name" required="true"/></td>
+				<td>(Middle):</td>
+				<td><input type="text" placeholder="Enter middle Name"/></td>
+				<td>(last):</td>
+				<td><input type="text" placeholder="Enter last name"/></td>
+			</tr>
+			<tr>
+				<td>D.O.B.:</td>
+				<td><input type="date" required="true"/></td>
+				<td>Gender:</td>
+				<td><input type="radio" name="a"/>Male.
+			       <input type="radio" name="a"/>Female.</td>
+				<td>Caste:</td>
+				<td>
+					<select>
+						<option>select</option>
+						<option>Gen.</option>
+						<option>Obc.</option>
+						<option>Sc.</option>
+						<option>St.</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Religion:</td>
+				<td>
+					<select>
+						<option>--Select Religion--</option>
+						<option>Hindu</option>
+						<option>Muslim</option>
+						<option>Sikkha</option>
+						<option>Isai</option>
+					</select>
+				</td>
+				<td>Nationality:</td>
+				<td><input type="text" placeholder="Enter Nationality"/></td>
+				<td>Marrital Status:</td>
+				<td>
+					<input type="radio" name="b"/>Yes.
+			        <input type="radio" name="b"/>No.
+				</td>
+			</tr>
+			<tr>
+				<td>Mobile No.:</td>
+				<td><input type="number" placeholder="Enter Mobile No."/></td>
+				<td>Email:</td>
+				<td><input type="email" required="true" placeholder="Enter Email"/></td>
+				<td>Password:</td>
+				<td><input type="password" required="true" placeholder="Enter Password"/></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>Confirm Password:</td>
+				<td><input type="password" placeholder="Enter Confirm Password"/></td>
+			</tr>
+			<tr>
+				<td>Adhar No.:</td>
+				<td><input type="number" placeholder="Enter Adhar No."/></td>
+				<td>Hobbies:</td>
+				<td><input type="checkbox"/>Singing
+			        <input type="checkbox"/>Playing.
+			        <input type="checkbox"/>cooking.
+				</td>
+				<td>Orban/Rural:</td>
+				<td><select>
+					<option>select</option>
+					<option>Orban</option>
+					<option>Rural</option>
+				</select>
+				</td>
+			</tr>
+		</table>
+	</fieldset><br/><br/>
+	<fieldset>
+		<legend><b style="font-size:20px;">Education Information:</b></legend>
+		<table height="150" width="1200" cellspacing="0">
+			<tr>
+				<td><b>Qualification</b></td>
+				<td><b>Obtain Marks</b></td>
+				<td><b>Passing Year</b></td>
+				<td><b>Board Name</b></td>
+				<td><b>School/College Name</b></td>
+			</tr>
+			<tr>
+				<td>HighSchool:</td>
+				<td><input type="number" placeholder="Enter Obtain Marks"/></td>
+				<td><input type="year" placeholder="Passing Year"/></td>
+				<td><input type="text" placeholder="Board Name"/></td>
+				<td><input type="text" placeholder="School/College Name"/></td>
+			</tr>
+			<tr>
+				<td>Intermediate:</td>
+				<td><input type="number" placeholder="Enter Obtain Marks"/></td>
+				<td><input type="year" placeholder="Passing Year"/></td>
+				<td><input type="text" placeholder="Board Name"/></td>
+				<td><input type="text" placeholder="School/College Name"/></td>
+			</tr>
+			<tr>
+				<td>Diploma:</td>
+				<td><input type="number" placeholder="Enter Obtain Marks"/></td>
+				<td><input type="year" placeholder="Passing Year"/></td>
+				<td><input type="text" placeholder="Board Name"/></td>
+				<td><input type="text" placeholder="School/College Name"/></td>
+			</tr>
+		</table>
+	</fieldset><br/><br/>
+	<fieldset>
+		<legend><b style="font-size:20px;">General & Address Information:</b></legend>
+		<table height="200" width="1200" cellspacing="0">
+			<tr>
+				<td>Address:</td>
+				<td><textarea maxlength="200" rows="3" cols="30" placeholder="Enter Full Address"></textarea></td>
+				<td>City:</td>
+				<td>
+					<select>
+					<option>--Select City--</option>
+					<option>Jaunpur</option>
+					<option>Varanasi</option>
+					<option>Luckow</option>
+					<option>Agra</option>
+					</select>
+				</td>
+				<td>State:</td>
+				<td>
+					<select>
+						<option>--Select State--</option>
+						<option>U.P.</option>
+						<option>Goa</option>
+						<option>Maharastra</option>
+						<option>West Bengal</option>
+					</select>
+				</td>
+				<td>Pincode:</td>
+				<td><input type="number" placeholder="Enter Pincode"/></td>
+			</tr>
+			<tr>
+				<td>Bank Name:</td>
+				<td><input type="text" placeholder="Enter Bank Name"/></td>
+				<td>Account No.:</td>
+				<td><input type="number" placeholder="Enter Account No."/></td>
+				<td>Branch Name:</td>
+				<td><input type="text" placeholder="Enter Branch Name"/></td>
+				<td>IFSC Code:</td>
+				<td><input type="text" placeholder="Enter IFSC code"/></td>
+			</tr>
+			<tr>
+				<td>Fav. Actor:</td>
+				<td><input type="text" placeholder="Fav Actor Name"/></td>
+				<td>Fav. Color:</td>
+				<td><input type="color"/></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Upload Pics:</td>
+				<td><input type="file"/></td>
+				<td>Upload Signature:</td>
+				<td><input type="file"/></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Submit:</td>
+				<td><input type="submit"/></td>
+				<td>Reset:</td>
+				<td><input type="reset"/></td>
+				<td>Button:</td>
+				<td><input type="submit" value="Dummy"/></td>
+			</tr>
+		</table>
+	</fieldset>
+	</form>
+	</body>
+</html>
