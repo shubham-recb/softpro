@@ -1,0 +1,151 @@
+body
+{
+	background-image:url(back3.jpg);
+	background-repeat:repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	//-webkit-animation:backgroundScroll 15s linear 10;
+	//-webkit-animation-fill-mode:forwords;
+    animation:backgroundScroll 5s linear infinite;
+	animation-fill-mode:forwords;
+}
+@keyframes backgroundScroll
+{from {background-position:0 0;} to {background-position:-180px;}
+}
+#outer
+{
+			height:1600px;
+			width:1000px;
+			//border:1px solid white;
+			margin:0px auto;
+}
+		.green
+		{
+			color:rgb(176,199,122);
+			text-decoration:none;
+			font-family:arial;
+		}
+		#menu
+		{
+			height:50px ;
+			width:1000px;
+			background-color:rgb(247,250,246);
+			border-radius:20px 20px 0px 0px;
+		}
+		#slider
+		{
+			height:250px;
+			width:1000px;
+			background-color:white;
+			margin-top:5px;
+		}
+		#parent
+		{
+			height:900px;
+			width:1000px;
+			margin-top:5px;
+		}
+		#lside
+		{
+			height:900px;
+			width:700px;
+			background-color:white;
+			float:left;
+			border-radius:0px 0px 0px 20px;
+		}
+		#rside
+		{
+			height:900px;
+			width:300px;
+			background-color:rgb(226,235,218);
+			float:right;
+			border-radius:0px 0px 20px 0px;
+		}
+		#footer
+		{
+			height:270px;
+			width:1000px;
+			background-color:white;
+			margin-top:20px;
+			border-radius:20px;
+		}
+		#menu1
+		{
+			height:100%;
+			width:650px;
+			float:left;
+			border-radius:20px 0px 0px 0px;
+		}
+		#menu2
+		{
+			height:100%;
+			width:350px;
+			float:left;
+			border-radius:0px 20px 0px 0px;
+			
+		}
+		#lside1
+		{
+			height:120px;
+			width:700px;
+		}
+		#lside2
+		{
+			height:350px;
+			width:700px;
+		}
+		#lside3
+		{
+			height:350px;
+			width:700px;
+		}
+		#lside4
+		{
+			height:78px;
+			width:700px;
+		}
+		.box1
+		{
+			height:25px;
+			width:25px;
+			border:2px solid grey;
+			float:right;
+			margin-top:15px;
+			margin-right:10px;
+			text-align:center;
+		}
+		.box1:hover
+		{
+			background-color:green;
+		}		
+		.f1
+		{
+			height:270px;
+			width:330px;
+			float:left;
+		}
+		.f2
+		{
+			height:270px;
+			width:340px;
+			float:left;
+		}
+		.g1
+		{
+			height:80px;
+			width:80px;
+			border:2px solid grey;
+			float:left;
+			margin-left:15px;
+			margin-top:0px;
+		}
+		.g1 img
+		{
+			padding:3px;
+		}
+		#copyright
+		{
+			height:50px;
+			width:1000px;
+			margin-top:10px;
+		}

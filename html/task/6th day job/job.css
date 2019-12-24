@@ -1,0 +1,120 @@
+body
+{
+	background-image:url(c.jpeg);
+	background-attachment:fixed;
+	background-repeat:repeat;
+	background-size:cover;
+	animation:backgroundscroll 5s linear 10;
+	animation-fill-mode:forwords;
+}
+@keyframes backgroundscroll
+{
+	from {background-position:0px 0px;} to {background-position:-180px;}
+}
+#outer
+{
+	height:1100px;
+	width:1000px;
+	margin:0px auto;
+}
+#header
+{
+	height:250px;
+	width:1000px;
+	background-image:url("slider.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	border-radius:20px 20px 0px 0px;
+}
+#header1
+{
+	height:40px;
+	width:1000px;
+	background-color:rgb(55,52,47);
+	border-radius:20px 20px 0px 0px;
+}
+#header2
+{
+	height:210px;
+	width:1000px;
+}
+#employer
+{
+	height:200px;
+	width:1000px;
+	background-color:rgb(249,249,249);
+	margin-top:5px;
+}
+#employer1
+{
+	height:200px;
+	width:500px;
+	float:left;
+}
+#employer1a
+{
+	height:175px;
+	width:150px;
+	float:left;
+	margin:15px;
+	margin-top:10px;
+}
+#employer1a1
+{
+	height:35px;
+	width:150px;
+	background-color:rgb(45,165,187);
+}
+#employer1a2
+{
+	height:105px;
+	width:150px;
+	background-color:rgb(30,116,139);
+}
+#feature
+{
+	height:350px;
+	width:1000px;
+	background-color:rgb(243,243,243);
+}
+#featurel
+{
+	height:350px;
+	width:700px;
+	float:left;
+}
+#featurel1
+{
+	height:70px;
+	width:500px;
+	background-color:white;
+	float:left;
+	margin-left:170px;
+	margin-top:10px;
+}
+#featurer
+{
+	height:350px;
+	width:300px;
+	float:right;
+}
+
+#search
+{
+	height:250px;
+	width:1000px;
+	background-color:rgb(250,250,250);
+}
+#footer
+{
+	height:50px;
+	width:1000px;
+	background-color:rgb(30,116,132);
+	border-radius:0px 0px 20px 20px;
+}
+.facebook1
+{
+	margin-left:25px;
+	float:left;
+	margin-top:10px;
+}

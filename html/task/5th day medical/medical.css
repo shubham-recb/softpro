@@ -1,0 +1,231 @@
+body
+{
+	background-image:url(back1.jpeg);
+	background-repeat:repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	animation:backgroundscroll 5s linear 10;
+	animation-fill-mode:forwords;
+}
+@keyframes backgroundscroll
+{from {background-position:0px 0px;} to {background-position:-180px;}
+}
+#outer
+{
+	height:1501px;
+	width:1000px;
+	margin:0px auto;
+	border-radius:10px;
+}
+#header
+{
+	height:100px;
+	width:1000px;
+	border-bottom:1px solid lightgrey;
+	background-color:white;
+}
+#header1
+{
+	height:100px;
+	width:500px;
+	float:left;
+}
+#header1a
+{
+	height:10px;
+	width:500px;
+	background-color:rgb(2,153,216);
+}
+#header1b
+{
+	height:90px;
+	width:500px;
+	background-color:white;
+}
+#header2
+{
+	height:100px;
+	width:500px;
+	float:right;
+}
+#header2a
+{
+	height:30px;
+	width:500px;
+}
+#header2b
+{
+	height:34px;
+	width:500px;
+}
+#header2b1
+{
+	height:34px;
+	width:200px;
+	float:left;
+	margin-left:100px;
+}
+.facebook
+{
+	height:34px;
+	width:50px;
+	float:left;
+}
+.facebook a img
+{
+	margin-top:8px;
+}
+
+#header2b2
+{
+	height:34px;
+	width:200px;
+	float:right;
+}
+#header2b2 input[type=text]
+{
+	height:25px;
+	width:150px;
+	float:left;
+	margin-top:8px;
+	margin-left:6px;
+}
+#header2c
+{
+	height:36px;
+	width:500px;
+	margin-top:-16px;
+}
+#slider
+{
+	height:300px;
+	width:1000px;
+}
+#case
+{
+	height:250px;
+	width:1000px;
+}
+#case1
+{
+	height:250px;
+	width:350px;
+	background-color:rgb(3,153,216);
+	float:left;
+}
+#case2
+{
+	height:250px;
+	width:300px;
+	background-color:rgb(2,137,193);
+	float:left;
+}
+#case3
+{
+	height:250px;
+	width:350px;
+	background-color:rgb(3,153,216);
+	float:left;
+}
+#image
+{
+	height:250px;
+	width:1000px;
+	background-color:white;
+}
+#image1
+{
+	height:250px;
+	width:350px;
+	float:left;
+}
+#image2
+{
+	height:250px;
+	width:350px;
+	float:left;
+}
+#image3
+{
+	height:250px;
+	width:300px;
+	float:left;
+}
+#video
+{
+	height:250px;
+	width:1000px;
+	background-color:white;
+}
+#video1
+{
+	height:250px;
+	width:300px;
+	float:left;
+}
+#video2
+{
+	height:250px;
+	width:300px;
+	float:left;
+}
+#video3
+{
+	height:250px;
+	width:150px;
+	float:left;
+}
+#video4
+{
+	height:250px;
+	width:250px;
+	float:left;
+}
+#box
+{
+	height:70px;
+	width:1000px;
+	background-color:white;
+}
+#box1
+{
+	height:45px;
+	width:440px;
+	background-color:rgb(3,153,216);
+	float:left;
+	margin-top:20px;
+	margin-left:50px;
+}
+#box2
+{
+	height:45px;
+	width:440px;
+	background-color:black;
+	float:right;
+	margin-top:20px;
+	margin-right:20px;
+}
+#content
+{
+	height:230px;
+	width:1000px;
+}
+#content1
+{
+	height:230px;
+	width:250px;
+	float:left;
+	background-color:rgb(51,51,51);
+}
+#footer
+{
+	height:50px;
+	width:1000px;
+	background-color:rgb(32,32,32);
+}
+.facebook1
+{
+	margin-left:30px;
+	float:left;
+	margin-top:10px;
+}
