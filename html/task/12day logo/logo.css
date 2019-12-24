@@ -1,0 +1,48 @@
+body
+{
+	background-color:cyan;
+}
+#outer
+{
+	height:300px;
+	width:600px;
+	background-color:grey;
+	position:absolute;
+	top:150px;
+	left:350px;
+	border-radius:50px 0px 50px 0px;
+	box-shadow:5px 5px 5px black;
+}
+#google
+{
+	height:150px;
+	width:150px;
+	border-top:50px solid red;
+	border-right:50px solid blue;
+	border-bottom:50px solid green;
+	border-left:50px solid yellow;
+	border-radius:50%;
+	margin:25px 150px;
+	box-shadow:5px 5px 5px black;
+}
+#ghide
+{
+	height:100px;
+	width:130px;
+	background-color:grey;
+	position:relative;
+	left:90px;
+	bottom:10px;
+	transform:rotate(60deg);
+}
+#gframe
+{
+	height:50px;
+	width:100px;
+	background-color:blue;
+	position:relative;
+	left:98px;
+	bottom:30px;
+	border-radius:0px 10px 25px 0px;
+	
+}

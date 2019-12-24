@@ -1,0 +1,277 @@
+<html>
+	<head>
+		<title>SPi Home</title>
+		<link href="logo.jpeg" rel="icon"/>
+		<link href="home.css" rel="stylesheet" type="text/css"/>
+		<style>
+			#h2rside ul
+			{
+				list-style-type:none;
+			}
+			#h2rside ul li
+			{
+				display:inline;
+				padding:10px;
+			}
+			#h2rside ul li a
+			{
+				text-decoration:none;
+				color:black;
+				font-size:13px;
+				font-family:verdana;
+				font-weight:bold;
+			}
+			#h2rside ul li a:hover
+			{
+				color:rgb(233,205,21);
+				border-bottom:2px solid black;
+			}
+		</style>
+		<script>
+			var arr=["slider1.png","slider2.png","slider3.png"];
+			var index=0;
+			window.setInterval("slider()",2000);
+			function slider()
+			{
+				index++;
+				if(index==arr.length)
+				{
+					index=0;
+				}
+				document.getElementById("im").src=arr[index];
+			}
+		</script>
+	</head>
+	<body>
+		<body>
+			<div id="outer">
+				<div id="header1">
+					<div id="h1lside">
+						<a href="#"><span style="float:left;margin:15px 0px 0px 90px;"><img src="home.png"></span></a>
+						<h3 style="color:white;margin-left:120px;font-size:16px;margin-top:10px 0px 10px 0px;font-family:verdana;">A Company Founded By Technocrates from IIT & IET</h3>
+					</div>
+					<div id="h1rside">
+						<div id="h1l">
+							<a href="#"><span style="float:left;margin-top:20px"><img src="message.png"></span></a>
+							<h3 style="color:rgb(233,205,21);margin-left:0px;font-size:16px;margin-top:10px 0px 10px 0px;font-family:verdana;cursor:pointer;">hr@softproindia.org</h3>
+						</div>
+						<div id="h1r">
+							<h3 style="color:white;margin-left:0px;font-size:13px;margin-top:12px 0px 12px 0px;font-family:verdana;cursor:pointer;">Root &nbsp;&nbsp;&nbsp;&nbsp;Advisory Board  &nbsp;&nbsp;&nbsp;&nbsp;Management</h3>
+						</div>
+					</div>
+				</div>
+				<div id="header2">
+					<div id="h2lside">
+						<h3 style="color:black;margin-left:120px;font-size:30px;font-family:verdana;margin-top:10px;"><span style="color:rgb(233,205,21);">Softpro</span> lndia</h3>
+					</div>
+					<div id="h2rside">
+						<ul>
+							<li><a href="#" style="color:rgb(233,205,21);">HOME</a></li>
+							<li><a href="#">ABOUT</a></li>
+							<li><a href="#" onclick="service()">SERVICES</a></li>
+							<li><a href="#">CLIENTS</a></li>
+							<li><a href="#">EMANELMENT</a></li>
+							<li><a href="#">REACH US</a></li>
+							<li><a href="#"><span style="float:right;margin:-72px 65px 0px 0px;"><img src="drop.png"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="slider">
+					<img src="slider3.png" id="im" height="500px" width="1350px"/>
+					<div id="enquiryform" style="left:1400px;position:relative">
+						<form>
+							<h3 style="color:white;margin-left:15px;">Enquiry Form</h3>
+							<input type="text" name="name" placeholder="Enter Your Name"/><br/>
+							<input type="number" name="number" placeholder="Enter Your Contact No..."/>
+							<input type="email" name="email" placeholder="Enter Your Email.."/>
+							<input type="message" name="message" placeholder="Enter Your Message"/>
+							<input type="submit" value="Submit"/>
+						</form>
+					</div>
+					<div onclick="swap()" id="enquiry">
+						<img id="plus" src="plus.png" style="margin:10px;float:left;"/>
+						<a href="#" style="text-decoration:none;position:relative;top:10px;"><span style="color:white;font-family:verdana;font-weight:bold;color:yellow;margin:0px;">Enquiry</span></a>
+					</div>
+					<script>
+						var en=	document.getElementById('enquiryform');
+						var i=0;
+						var enclick=document.getElementById('enquiry');
+						var plus=document.getElementById("plus");
+						function swap()
+						{
+							if(i==0)
+							{
+								en.style="left:1140px";
+								plus.src="minus.png";
+								i=1;
+							}
+							else
+							{
+								en.style="left:1400px";
+								plus.src="plus.png";
+								i=0;
+							}
+						}
+					</script>
+				</div>
+				<div id="year">
+					<div id="year1">
+						<h3 style="color:white;margin-left:0px;font-size:35px;font-family:verdana;margin-top:0px;padding:70px;text-align:center;">12 year of <span style="color:rgb(233,205,21);">Excellence</span></h3>
+					</div>
+					<div id="year2">
+						<p style="color:white;margin-left:120px;font-size:17px;margin-top:10px 0px 10px 0px;font-family:Franklin Gothic;margin-right:120px;">
+                                    Softpro India Computer Technologies Private Limited was founded in 2004, by a group of Technocrats, Er. S.K.Verma of 1989 batch from Indian Institute of Technology (IIT) Kanpur, the pioneer institute of country, and Er. Ajay Chaudhary, an Engineering Graduate from Institute of Engineering & Technology (I.E.T) Lucknow of 1995 Batch.
+                                    <br />
+                                    <br />
+                                    Softpro India Computer Technologies Private Limited was founded in 2004, by a group of Technocrats, Er. S.K.Verma of 1989 batch from Indian Institute of Technology (IIT) Kanpur, the pioneer institute of country, and Er. Ajay Chaudhary, an Engineering Graduate from Institute of Engineering & Technology (I.E.T) Lucknow of 1995 Batch. all of whom have a higher degree. We have a strong track record of innovation. Our solutions have been used by clients of different background and size, from small companies to individuals and government organizations.<br />
+
+                                    Softpro India is master in programming services, Application Development and Integration Services, Web Design and Development Services and Search Engine Optimization Services (SEO). We offer customized and flexible IT solutions, with low costs for international standards, without any reduction or loss in quality, technology and/or scalability for the client. We treat our clients with courtesy, friendliness and intelligence.
+                                    <br />
+                                    <br />
+                                   Softpro India Computer Technologies Private Limited was founded in 2004, by a group of Technocrats, Er. S.K.Verma of 1989 batch from Indian Institute of Technology (IIT) Kanpur, the pioneer institute of country, and Er. Ajay Chaudhary, an Engineering Graduate from Institute of Engineering & Technology (I.E.T) Lucknow of 1995 Batch. and keep them involved in every stage through the entire project. Our meticulous approach has helped us build our excellent track record with no failed or aborted projects. We are in the business of change, managing complexity with an unparalleled insight, looking beyond the horizon of IT with resources focused on solutions. Becoming successful is a skill but one cannot perfect it without practice.
+				
+                                </p>
+					</div>
+				</div>
+				<!--<script>
+					function service()
+					{
+						var service=document.getElementById("service");
+						service.style.position="relative";
+						service.style.top="200px";
+					}
+				</script>-->
+				<div id="service">
+					<div id="service1">
+						<h3 style="color:white;margin-left:0px;font-size:35px;font-family:verdana;margin-top:0px;padding:70px;text-align:center;">Our   <span style="color:rgb(233,205,21);">Services</span></h3>
+					</div>
+					<div id="service2">
+						<div id="s2a">
+							<div id="box1"><a href="#"><img src="box1.png" style="margin:25px 20px;"/></a></div>
+							<h2 style="color:rgb(233,205,21);margin-left:100px;">Software Development</h2>
+							<p style="color:white;margin-left:100px;font-family:Franklin Gothic;text-align:justify;">Softpro India Computer Technologies Private Limited was founded in 2004, by a group of Technocrats, Er. S.K.Verma of 1989 batch from Indian Institute of Technology (IIT) Kanpur, the pioneer institute of country, and Er. Ajay Chaudhary, an Engineering Graduate from Institute of Engineering & Technology (I.E.T) Lucknow of 1995 Batch.Softpro India Computer Technologies Private Limited was founded in 2004, by a group of Technocrats, Er. S.K.Verma of 1989 batch from Indian Institute of Technology (IIT) Kanpur, the pioneer institute of country, and Er. Ajay Chaudhary, an Engineering Graduate from Institute of Engineering & Technology (I.E.T) Lucknow of 1995 Batch.</p>
+						</div>
+						<div id="s2b">
+							<div id="box2"><a href="#"><img src="box2.png" style="margin:25px 20px;"/></a></div>
+							<h2 style="color:rgb(233,205,21);margin-left:50px;">Web Development</h2>
+							<p style="color:white;margin-left:50px;font-family:Franklin Gothic;text-align:justify;">Softpro India Computer Technologies Private Limited was founded in 2004, by a group of Technocrats, Er. S.K.Verma of 1989 batch from Indian Institute of Technology (IIT) Kanpur, the pioneer institute of country, and Er. Ajay Chaudhary, an Engineering Graduate from Institute of Engineering & Technology (I.E.T) Lucknow of 1995 Batch.Softpro India Computer Technologies Private Limited was founded in 2004, by a group of Technocrats, Er. S.K.Verma of 1989 batch from Indian Institute of Technology (IIT) Kanpur, the pioneer institute of country, and Er. Ajay Chaudhary, an Engineering Graduate from Institute of Engineering & Technology (I.E.T) Lucknow of 1995 Batch.Technologies Private Limited was founded in 2004, by a group of Technocrats, Er. S.K.Verma of 1989 batch from Indian Institute of Technology (IIT) Kanpur,Er. S.K.Verma of 1989 batch from Indian Institute of Technology (IIT) Kanpur, the pioneer institute of country,</p>
+						</div>
+						<div id="s2c">
+							<div id="box3"><a href="#"><img src="box3.png" style="margin:25px 20px;"/></a></div>
+							<h2 style="color:rgb(233,205,21);margin-left:50px;">Mobile App Development</h2>
+							<p style="color:white;margin-left:50px;font-family:Franklin Gothic;text-align:justify;">Softpro India Computer Technologies Private Limited was founded in 2004, by a group of Technocrats, Er. S.K.Verma of 1989 batch from Indian Institute of Technology (IIT) Kanpur, the pioneer institute of country, and Er. Ajay Chaudhary, an Engineering Graduate from Institute of Engineering & Technology (I.E.T) Lucknow of 1995 Batch.Softpro India Computer Technologies Private Limited was founded in 2004, by a group of Technocrats, Er. S.K.Verma of 1989 batch from Indian Institute of Technology (IIT) Kanpur, the pioneer institute of country, and Er. Ajay Chaudhary, an Engineering Graduate from Institute of Engineering & Technology (I.E.T) Lucknow of 1995 Batch.</p>
+						</div>
+					</div>
+				</div>
+				<div id="clients">
+					<div id="clients1">
+						<h3 style="color:white;margin-left:0px;font-size:35px;font-family:verdana;margin-top:0px;padding:60px;text-align:center;">Our   <span style="color:rgb(233,205,21);">Clients</span></h3>
+					</div>
+					<div id="clients2">
+						<div id="clients2img">
+							<div id="clients2img1">
+								<div class="boxA">
+									<a href="#"><img src="boxa.png" height="190px" width="275px" style="margin:4px;border:1px solid yellow;"/></a>
+								</div>
+								<div class="boxA">
+									<a href="#"><img src="boxb.png" height="190px" width="275px" style="margin:4px;border:1px solid yellow;"/></a>
+								</div>
+								<div class="boxA">
+									<a href="#"><img src="boxc.png" height="190px" width="275px" style="margin:4px;border:1px solid yellow;"/></a>
+								</div>
+								<div class="boxA">
+									<a href="#"><img src="boxd.png" height="190px" width="275px" style="margin:4px;border:1px solid yellow;"/></a>
+								</div>
+							</div>
+							<div id="clients2img2">
+								<div class="boxB">
+									<a href="#"><img src="boxe.png" height="190px" width="275px" style="margin:4px;border:1px solid yellow;border-bottom:0px;"/></a>
+								</div>
+								<div class="boxB">
+									<a href="#"><img src="boxf.png" height="190px" width="275px" style="margin:4px;border:1px solid yellow;border-bottom:0px;"/></a>
+								</div>
+								<div class="boxB">
+									<a href="#"><img src="boxg.png" height="190px" width="275px" style="margin:4px;border:1px solid yellow;border-bottom:0px;"/></a>
+								</div>
+								<div class="boxB" style="border-right:1px solid yellow;">
+									<a href="#"><img src="boxh.png" height="190px" width="275px" style="margin:4px;border:1px solid yellow;border-bottom:0px;"/></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="emplement">
+					<div id="emplement1">
+						<h3 style="color:white;margin-left:0px;font-size:35px;font-family:verdana;margin-top:0px;padding:30px;text-align:center;">Our   <span style="color:rgb(233,205,21);">Emapanelments</span></h3>
+					</div>
+					<div id="emplement2">
+						<div id="emplement2A">
+							<p style="padding-top:40px;text-align:justify;color:white;font-family:Franklin Gothic;font-size:15px;">Softpro India Computer Technologies Private Limited was founded in 2004, by a group of Technocrats,<span style="color:rgb(233,205,21);"> Er. S.K.Verma of 1989 batch from Indian Institute of Technology (IIT) Kanpur,</span> the pioneer institute of country, and Er. Ajay Chaudhary.</p><br/>
+							<p style="text-align:justify;color:white;font-family:Franklin Gothic;font-size:15px;">Softpro India Computer Technologies Private Limited was founded in 2004, by a group of Technocrats, Er. S.K.Verma of 1989 batch from Indian Institute of Technology (IIT) Kanpur, the pioneer institute of country, and Er. Ajay Chaudhary, an Engineering Graduate.</p><br/>
+							<p style="text-align:justify;color:white;font-family:Franklin Gothic;font-size:15px;">Softpro India Computer Technologies Private Limited was founded in 2004, by a group of Technocrats, Er. S.K.Verma of 1989 batch from Indian Institute of Technology (IIT) Kanpur, the pioneer institute of country, and Er. Ajay Chaudhary, an Engineering Graduate from Institute of Engineering & Technology.</p><br/>
+							<p style="text-align:justify;color:white;font-family:Franklin Gothic;font-size:15px;">Softpro India Computer Technologies Private Limited was founded in 2004, by a group of Technocrats, Er. S.K.Verma of 1989 batch from Indian Institute of Technology (IIT) Kanpur, the pioneer institute of country, and Er. Ajay Chaudhary, an Engineering Graduate from Institute of Engineering & Technology (I.E.T) Lucknow of 1995 Batch.</p>
+						</div>
+					</div>
+				</div>
+				<div id="map">
+					<div id="map1">
+						<h3 style="color:white;margin-left:0px;font-size:35px;font-family:verdana;margin-top:0px;padding:60px;text-align:center;">Reach   <span style="color:rgb(233,205,21);">Us</span></h3>
+					</div>
+					<div id="map2">
+						<div id="map2A">
+							<div id="map2Abox">
+								<div id="map2Abox1">
+									<h3 style="color:white;font-family:Franklin Gothic;">CORPORATE OFFICE</h3>
+									<p style="color:white;font-family:verdana;">SOFTPRO INDIA COMPUTER TECHNOLOGIES(P LIMITED)</p>
+									<div id="phone">
+										<a href="#"><img src="phone.png" height="25px" width="25px" style="margin:12px;"/></a>
+									</div>
+									<span style="color:white;position:relative;top:15px;padding:0px 15px;float:left;"><b>+91 7080811340</b></span>
+									<div id="phone">
+										<a href="#"><img src="message.png" height="25px" width="25px" style="margin:12px;"/></a>
+									</div>
+									<span style="color:white;position:relative;top:15px;padding:0px 15px;"><b>hr@softproindia.org</b></span><br/><br/><br/><br/>
+									<div id="phone">
+										<a href="#"><img src="location.png" height="25px" width="25px" style="margin:12px;"/></a>
+									</div>
+									<span style="color:white;position:relative;top:15px;padding:0px 10px;font-size:13px;font-family:Franklin Gothic;">SOFTPRO TOWER, NEAR NEW HANUMAN TEMPLE, KAPPORTHALE, ALINGANJ, LUCKNOW</span>
+								</div>
+								<div id="map2Abox2">
+									<h3 style="color:white;font-family:Franklin Gothic;">OVERSEAS OFFICE</h3>
+									<p style="color:white;font-family:verdana;">SOFTPRO INNOVATION</p>
+									<div id="phone">
+										<a href="#"><img src="phone.png" height="25px" width="25px" style="margin:12px;"/></a>
+									</div>
+									<span style="color:white;position:relative;top:15px;padding:0px 15px;float:left;"><b>+60 122871701</b></span>
+									<div id="phone">
+										<a href="#"><img src="message.png" height="25px" width="25px" style="margin:12px;"/></a>
+									</div>
+									<span style="color:white;position:relative;top:15px;padding:0px 15px;"><b>Saad@softproinnovations.com.my</b></span><br/><br/><br/><br/>
+									<div id="phone">
+										<a href="#"><img src="location.png" height="25px" width="25px" style="margin:12px;"/></a>
+									</div>
+									<span style="color:white;position:relative;top:15px;padding:0px 10px;font-size:13px;font-family:Franklin Gothic;">A-13a-07 Mercu Summer Suites Jalan 52500, Kuala Lumpur, Malaysia.</span>
+								</div>
+							</div>
+						</div>
+						<div id="map2B">
+							<div id="map2Bbox"><a href="#"><img src="map.png" height="445px" width="495px" style="margin:3px;"/></a></div>
+						</div>
+					</div>
+				</div>
+				<div id="footer">
+					<div id="footer1">
+						<a href="#" style="text-decoration:none;"><span style="margin-left:100px;position:relative;top:20px;color:white;font-family:arial;"><span style="border-right:1px solid white;padding:8px;b">Home</span><span style="border-right:1px solid white;padding:8px;">Gate a Quote</span><span style="border-right:1px solid white;padding:8px;">Team</span><span style="border-right:1px solid white;padding:8px;">Apply For job</span></span></a>
+					</div>
+					<div id="footer1">
+						<a href="#" style="text-decoration:none;"><span style="margin-left:100px;position:relative;top:20px;color:white;font-family:arial;"><span style="padding:8px;b">Meet Us On</span><span style="padding:8px;"><img src="facebook.png"/></span><span style="padding:15px;"><img src="twitter.png"/></span><span style="padding:15px;"><img src="youtube.png"/></span></span></a>
+					</div>
+					<div id="footer1">
+						<span style="margin-left:50px;position:relative;top:20px;color:white;font-family:arial;">&copy; Copyright 2018. Design By Technical Team.</span>
+						<a href="" style="position:fixed;right:15px;bottom:15px;"><img src="scroll.png"></a>
+					</div>
+				</div>
+			</div>
+		</body>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+body
+{
+	background-color:cyan;
+}
+#menu ul
+{
+	list-style-type:none;
+}
+#menu ul li
+{
+	border:2px solid white;
+	background-color:red;
+	width:120px;
+	height:35px;
+	text-align:center;
+	line-height:35px;
+	float:left;
+	margin:1px;
+	position:relative;
+	border-radius:35px 0px 35px 0px;
+	box-shadow:5px 5px 5px black;
+}
+#menu ul li a
+{
+	text-decoration:none;
+	color:white;
+	font-family:verdana;
+	display:block;
+}
+#menu ul li a:hover
+{
+	background-color:green;
+	border-radius:35px 0px 35px 0px;
+}
+#menu ul ul
+{
+	display:none;
+	margin:0px;
+	padding:0px;
+	position:absolute;
+}
+#menu ul li:hover > ul
+{
+	display:block;
+	border-radius:35px 0px 35px 0px;
+}
+#menu ul ul ul
+{
+	margin-left:120px;
+	top:0px;
+}

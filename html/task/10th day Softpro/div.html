@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title></title>
+		<style>
+			#h1
+			{
+				height:200px;
+				width:200px;
+				background-color:black;
+				border-radius:50%;
+				margin-left:100px;
+			}
+			#c1
+			{
+				height:150px;
+				width:150px;
+				background-color:black;
+				border-radius:50%;
+				background-color:red;
+				display:none;
+				margin:20px;
+			}
+			#outer
+			{
+				height:250px;
+				width:300px;
+				border:1px solid red;
+				background-color:cyan;
+			}
+		</style>
+		<script>
+			function show()
+			{
+				var c1=document.getElementById("c1");
+				c1.style.display="block";
+			}
+			function hide()
+			{
+				var c1=document.getElementById("c1");
+				c1.style.display="none";
+			}
+		</script>
+	</head>
+	<body>
+		<div id="outer">
+		<div id="h1" onmouseover="show()" onmouseout="hide()">
+		<div id="c1"><h3 style="color:white;margin-left:5px;text-align:center;padding-top:25px;font-size:15px;">SOFTPRO<br/>INDIA</h3><hr style="width:80%;"/>
+						<p style="color:white; text-align:center;font-size:13px;"><i>Bridging the<br/>Technology GAP</i></p></div></div>
+		</div>
+		
+	</body>
+</html>

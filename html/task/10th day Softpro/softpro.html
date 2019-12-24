@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<title>Softpro India</title>
+		<link href="logo.jpeg" rel="icon"/>
+		<link href="softpro.css" rel="stylesheet" type="text/css">
+		
+		<script>
+		
+			function show()
+			{
+			
+				
+				var c1=document.getElementById("c1");
+				var p1=document.getElementById("p1");
+				c1.style.display="block";
+				//c1.style.transform="rotateY(-180deg)";
+				p1.style.display="block";
+				
+			}
+			function hide()
+			{
+				var c1=document.getElementById("c1");
+				var p1=document.getElementById("p1");
+				c1.style.display="none";
+				p1.style.display="none";
+			}
+			function show1()
+			{
+			
+			
+				var c1=document.getElementById("c2");
+				var p2=document.getElementById("p2");
+				c1.style.display="block";
+				p2.style.display="block";
+				
+			}
+			function hide1()
+			{
+				var c1=document.getElementById("c2");
+				var p2=document.getElementById("p2");
+				c1.style.display="none";
+				p2.style.display="none";
+			}
+			function show2()
+			{
+			
+			
+				var c1=document.getElementById("c3");
+				var p3=document.getElementById("p3");
+				c1.style.display="block";
+				p3.style.display="block";
+				
+			}
+			function hide2()
+			{
+				var c1=document.getElementById("c3");
+				var p3=document.getElementById("p3");
+				c1.style.display="none";
+				p3.style.display="none";
+			}
+		</script>
+		
+	</head>
+	<body>
+		<div id="outer">
+		
+			<div id="header1">
+				<span style="font-size:50px; font-weight:bold; color:white;margin-left:350px;position:relative;top:15px;font-family:franklin ghotic">
+					<span style="color:rgb(233,205,21);">S</span>oftpro 
+					<span style="color:rgb(233,205,21);">G</span>roup of 
+					<span style="color:rgb(233,205,21);">C</span>ompanies
+				</span>
+				<h3 style="color:white;margin-left:410px;font-size:22px;position:relative;top:-10px;">A Company Founded By Technocrates from IIT & IET</h3>
+			</div>
+			
+			<div id="header2">
+			
+				<div id="circle1" onmouseover="show()" onmouseout="hide()">
+					<div id="img1">
+						<img src="logo.jpeg" height="80px" width="150px" style="margin-top:50px;margin-left:15px;border-radius:15px;;">
+						<a href="home.html">
+							<div id="c1" style="display:none;">
+								<h3 style="color:white;margin-left:5px;text-align:center;padding-top:25px;font-size:15px;">SOFTPRO<br/>INDIA</h3><hr style="width:80%;"/>
+								<p style="color:white; text-align:center;font-size:13px;"><i>Bridging the<br/>Technology GAP</i></p>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+				<div id="circle2" onmouseover="show1()" onmouseout="hide1()">
+					<div id="img2">
+						<img src="logo1.png" height="80px" width="150px" style="margin-top:50px;margin-left:15px;border-radius:15px;;">
+						<a href="#">
+							<div id="c2" style="display:none;">
+								<h3 style="color:white;text-align:center;padding-top:15px;font-size:15px;">SOFTPRO<br/>LEARNING<br/>CENTER</h3><hr style="width:80%"/>
+								<p style="color:white;text-align:center;padding-top:0px;font-size:13px;"><i>Largest Learning<br/>Center in North India</i></p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div id="circle3" onmouseover="show2()" onmouseout="hide2()">
+					<div id="img3">
+						<img src="logo2.png" height="100px" width="150px" style="margin-top:40px;margin-left:15px;border-radius:15px;;">
+						<a href="#">
+							<div id="c3"style="display:none;">
+								<h3 style="color:white;text-align:center;padding-top:25px;font-size:15px;">SOFTPRO<br/>INNOVATIONS</h3><hr style="width:80%"/>
+								<p style="color:white;text-align:center;padding-top:0px;font-size:13px;"><i>Imagination<br/>Implementation<br/>Innovation</i></p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			<div id="header3">
+			<div id="par">
+				<p id="p1" style="color:white; font-weight:bold;font-size:20px;font-family:ghotic;text-align:center;display:none;margin-top:0px;padding:40px;">Softpro India Computer Technologies (P) Limited is one of the prominent<br/><span style="color:rgb(233,205,21);">Software Companies</span>working in Pan India and<span style="color:rgb(233,205,21);">An Associate of UPDESCO</span>for facilitating software development in government sector.</p>
+				<p id="p2" style="color:white; font-weight:bold;font-size:20px;font-family:ghotic;text-align:center;display:none;margin-top:0px;padding:40px;">Softpro Learning Center is<span style="color:rgb(233,205,21);">The Training Division</span>of Softpro Group. <br/>SLC is the<span style="color:rgb(233,205,21);">Largest Learning Center for CS/IT</span>in North India.</p>
+				<p id="p3" style="color:white; font-weight:bold;font-size:20px;font-family:ghotic;text-align:center;display:none;margin-top:0px;padding:40px;">Softpro Innovations (P) Limited is a privately held oraganization dealing in<br><span style="color:rgb(233,205,21);">Research and Development</span>. It is <span style="color:rgb(233,205,21);">An Electronic Product Development Company</span>, headquartered in Lucknow.</p>
+				</div>
+				<div style="height:50px; width:1350px;"><h3 style="color:white;font-weight:bold;text-align:center;font-size:18px;padding:100px;">Design & Developed By : Developer Team.</h3></div>
+			</div>
+		</div>
+	</body>
+</html>

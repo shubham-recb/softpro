@@ -1,0 +1,340 @@
+#outer
+{
+	height:3750px;
+	width:1350px;
+	//background-color:cyan;
+	margin:0px auto;
+	background-image:url("BACK.jpg");
+	background-size:cover;
+	background-attachment:fixed;
+	overflow-x:hidden;
+	
+}
+#header1
+{
+	height:55px;
+	width:1350px;
+	background-color:black;
+	
+}
+#h1lside
+{
+	height:55px;
+	width:675px;
+	background-color:black;
+	float:left;
+	
+}
+#h1rside
+{
+	height:55px;
+	width:675px;
+	float:right;
+	
+}
+#h1l
+{
+	height:55px;
+	width:300px;
+	float:left;
+	
+}
+#h1r
+{
+	height:55px;
+	width:375px;
+	float:right;
+	
+}
+#header2
+{
+	height:60px;
+	width:1350px;
+	background-color:white;
+	//position:fixed;
+	position:sticky;
+	top:0;
+	
+}
+#h2lside
+{
+	height:60px;
+	width:675px;
+	float:left;
+	
+}
+#h2rside
+{
+	height:60px;
+	width:675px;
+	float:right;
+	
+}
+#slider
+{
+	height:500px;
+	width:1350px;
+	border-bottom:5px solid yellow;
+}
+#enquiry
+{
+	height:45px;
+	width:110px;
+	border:3px double yellow;
+	border-radius:8px;
+	position:fixed;
+	right:0px;
+	bottom:440px;
+	background-color:black;
+	cursor:pointer;
+}
+#enquiryform
+{
+	height:280px;
+	width:200px;
+	background-color:rgb(194,153,11);
+	position:fixed;
+	right:0px;
+	bottom:170px;
+	border:3px solid grey;
+	box-shadow:5px 5px 5px black;
+	border-radius:8px;	
+}
+input[type=text],[type=number],[type=email],[type=message],[type=submit]
+{
+	height:30px;
+	margin:1px;
+	margin-left:15px;
+	border-radius:5px;
+}
+input[type=message]
+{
+	height:70px;
+}
+input[type=submit]
+{
+	width:175px;
+	background-color:rgb(48,39,7);;
+	color:white;
+	cursor:pointer;
+}
+#year
+{
+	height:550px;
+	width:1350px;
+	border-bottom:3px solid yellow;
+}
+#year1
+{
+	height:150px;
+	width:1350px;
+}
+#year2
+{
+	height:400px;
+	width:1350px;
+}
+#service
+{
+	height:750px;
+	width:1350px;
+	border-bottom:3px solid yellow;
+}
+#service1
+{
+	height:200px;
+	width:1350px;
+}
+#service2
+{
+	height:550px;
+	width:1350px;
+}
+#s2a
+{
+	height:550px;
+	width:450px;
+	float:left;
+}
+#box1
+{
+	height:100px;
+	width:100px;
+	border:2px solid white;
+	margin-left:100px;
+}
+#s2b
+{
+	height:550px;
+	width:430px;
+	float:left;
+}
+#box2
+{
+	height:100px;
+	width:100px;
+	border:2px solid white;
+	margin-left:50px;
+}
+#s2c
+{
+	height:550px;
+	width:400px;
+	float:left;
+}
+#box3
+{
+	height:100px;
+	width:100px;
+	border:2px solid white;
+	margin-left:50px;
+}
+#clients
+{
+	height:600px;
+	width:1350px;
+	border-bottom:3px solid yellow;
+}
+#clients1
+{
+	height:150px;
+	width:1350px;
+}
+#clients2
+{
+	height:450px;
+	width:1350px;
+}
+#clients2img
+{
+	height:400px;
+	width:1150px;
+	margin-left:95px;
+	
+}
+#clients2img1
+{
+	height:200px;
+	width:1150px;
+	
+}
+.boxA
+{
+	height:200px;
+	width:285px;
+	float:left;
+	border:1px solid yellow;
+	border-bottom:0px;
+}
+#clients2img2
+{
+	height:200px;
+	width:1150px;
+	
+}
+
+.boxB
+{
+	height:197px;
+	width:285px;
+	float:left;
+	border:1px solid yellow;
+}
+#emplement
+{
+	height:500px;
+	width:1350px;
+	border-bottom:3px solid yellow;
+}
+#emplement1
+{
+	height:100px;
+	width:1350px;
+}
+#emplement2
+{
+	height:400px;
+	width:1350px;
+	margin-top:-16px;
+}
+#emplement2A
+{
+	height:350px;
+	width:1150px;
+	margin-left:100px;
+}
+#map
+{
+	height:650px;
+	width:1350px;
+	border-bottom:2px solid yellow;
+}
+#map1
+{
+	height:150px;
+	width:1350px;
+}
+#map2
+{
+	height:500px;
+	width:1350px;
+}
+#map2A
+{
+	height:500px;
+	width:675px;
+	float:left;
+}
+#map2Abox
+{
+	height:450px;
+	width:575px;
+	border-bottom:2px solid grey;
+	float:right
+}
+#map2Abox1
+{
+	height:225px;
+	width:575px;
+	margin-top:-19px;
+}
+#phone
+{
+	height:50px;
+	width:50px;
+	border:2px solid white;
+	float:left;
+}
+#map2Abox2
+{
+	height:225px;
+	width:575px;
+	margin-top:-18px;
+}
+#map2B
+{
+	height:500px;
+	width:675px;
+	float:right;
+}
+#map2Bbox
+{
+	height:450px;
+	width:500px;
+	float:left;
+	margin-left:75px;
+	border:2px solid white;
+}
+#footer
+{
+	height:60px;
+	width:1350px;
+	border-bottom:2px solid yellow;
+	background-color:black;
+}
+#footer1
+{
+	height:60px;
+	width:450px;
+	float:left;
+}

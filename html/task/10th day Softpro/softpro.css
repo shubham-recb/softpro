@@ -1,0 +1,143 @@
+#outer
+{
+	height:650px;
+	width:1350px;
+	position:fixed;
+	background-image:url("images.jpg");
+	background-size:cover;
+	//opacity:0.3;
+	 //animation:backgroundScroll 5s linear infinite;
+	//animation-fill-mode:forwords;
+	//animation-direction: alternate;
+}
+@keyframes backgroundScroll
+{from {background-position:0 0;} to {background-position:50px -50px;}
+}
+a
+{
+	text-decoration:none;
+}
+hr
+{
+	color:white;
+}
+#header1
+{
+	height:150px;
+	width:1350px;
+	//background-color:red;
+	
+}
+#header2
+{
+	height:200px;
+	width:1350px;
+	//background-color:yellow;
+}
+#circle1
+{
+	height:200px;
+	width:200px;
+	background-color:white;
+	border-radius:50%;
+	float:left;
+	margin-left:350px;
+	background-image:url('.jpeg');
+	background-size:100% 100%;
+}
+#img1
+{
+	height:180px;
+	width:180px;
+	border-radius:50%;
+	//background-color:green;
+	margin-top:10px;
+	margin-left:10px;
+	
+	
+}
+#c1
+{
+	height:160px;
+	width:160px;
+	background-color:black;
+	border-radius:50%;
+	margin:10px;
+	cursor:pointer;
+	position:relative;
+	bottom:135px;
+	
+}
+#circle2
+{
+	height:200px;
+	width:200px;
+	background-color:white;
+	border-radius:50%;
+	float:left;
+	margin-left:40px;
+}
+#img2
+{
+	height:180px;
+	width:180px;
+	border-radius:50%;
+	//background-color:green;
+	margin-top:10px;
+	margin-left:10px;
+	
+	
+}
+#c2
+{
+	height:160px;
+	width:160px;
+	background-color:black;
+	border-radius:50%;
+	margin:10px;
+	cursor:pointer;
+	position:relative;
+	bottom:135px;
+}
+#circle3
+{
+	height:200px;
+	width:200px;
+	background-color:white;
+	border-radius:50%;
+	float:left;
+	margin-left:40px;
+}
+#img3
+{
+	height:180px;
+	width:180px;
+	border-radius:50%;
+	//background-color:green;
+	margin-top:10px;
+	margin-left:10px;
+	
+	
+}
+#c3
+{
+	height:160px;
+	width:160px;
+	background-color:black;
+	border-radius:50%;
+	margin:10px;
+	cursor:pointer;
+	position:relative;
+	bottom:145px;
+}
+#header3
+{
+	height:300px;
+	width:1350px;
+	//background-color:green;
+}
+#par
+{
+	height:100px;
+	width:1350px;
+}
