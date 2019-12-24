@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<title>Div</title>
+		<style>
+			#outer
+			{
+				height:400px;
+				width:400px;
+				border:1px solid;
+			}
+			#h1
+			{
+				height:200px;
+				width:400px;
+				background-color:red;
+			}
+			#h2
+			{
+				height:200px;
+				width:400px;
+				background-color:yellow;
+			}
+			#h1a
+			{
+				height:200px;
+				width:200px;
+				background-color:green;
+				float:left;
+			}
+			#h1b
+			{
+				height:200px;
+				width:200px;
+				background-color:orange;
+				float:right;
+			}
+			#h2a
+			{
+				height:200px;
+				width:200px;
+				background-color:red;
+				float:left;
+			}
+			#h2b
+			{
+				height:200px;
+				width:200px;
+				background-color:cyan;
+				float:right;
+			}
+			#h21
+			{
+				height:100px;
+				width:200px;
+				background-color:red;
+				float:left;
+			}
+			#h22
+			{
+				height:100px;
+				width:200px;
+				background-color:cyan;
+				float:right;
+			}
+			#h21a
+			{
+				height:100px;
+				width:100px;
+				background-color:blue;
+				float:left;
+			}
+			#h22b
+			{
+				height:100px;
+				width:100px;
+				background-color:magenta;
+				float:right;
+			}
+			#h21c
+			{
+				height:100px;
+				width:100px;
+				background-color:blue;
+				float:left;
+			}
+			#h22d
+			{
+				height:100px;
+				width:100px;
+				background-color:yellow;
+				float:right;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="outer">
+			<div id="h1">
+				<div id="h1a"></div>
+				<div id="h1b"></div>
+			</div>
+				<div id="h2a"></div>
+				<div id="h2b">
+					<div id="h21">
+						<div id="h21a"></div>
+						<div id="h22b"></div>
+					</div>
+					<div id="h22">
+						<div id="h22c"></div>
+				        <div id="h22d"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
